@@ -1,0 +1,127 @@
+/* 🌿 General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00695c, #004d40);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* 🔹 Centered Glassmorphism Container */
+.container {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+/* 🔹 Header */
+h1 {
+    font-size: 2.2rem;
+    color: #ffeb3b;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 File Upload Styling */
+input[type="file"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]:hover {
+    border-color: #ffeb3b;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 🔹 Upload Button */
+button {
+    background: linear-gradient(135deg, #ffeb3b, #ff9800);
+    color: #004d40;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 235, 59, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(255, 87, 34, 0.4);
+}
+
+/* 🔹 Result Section */
+.result-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Image Display */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 🔹 Prediction Result */
+.result {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
